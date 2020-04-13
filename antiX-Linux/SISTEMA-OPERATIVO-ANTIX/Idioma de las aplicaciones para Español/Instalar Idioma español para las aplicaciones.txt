@@ -1,0 +1,32 @@
+
+
+
+
+sudo apt-get install libreoffice-l10n-es mythes-es kde-l10n-es firefox-esr-l10n-es-es firefox firefox-l10n-xpi-es-es qttranslations5-l10n chromium-l10n krita-l10n gutenprint-locales calligra-l10n-es vlc-l10n
+
+
+
+Buscando en synaptic:
+
+l10n
+
+mythes-es.- Es el diccionario de sinónimos para LibreOffice
+
+
+
+encontré los siguientes:
+
+aegisub-l10n
+thunderbird-l10n-es-es
+pavucontrol-qt-l10n
+qterminal-l10n
+smplayer-l10n
+calligra-l10n-es.- los idiomas de calligra 
+vlc-l10n
+
+
+
+
+Si quieres generar los locales otra vez poner:
+
+sudo locale-gen

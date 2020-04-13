@@ -1,0 +1,9 @@
+Package: build
+Priority: extra
+Section: checkinstall
+Installed-Size: 64492
+Maintainer: root@antix19
+Architecture: i386
+Version: 20200224-1
+Provides: build
+Description: Toonz is a 2D animation software program
