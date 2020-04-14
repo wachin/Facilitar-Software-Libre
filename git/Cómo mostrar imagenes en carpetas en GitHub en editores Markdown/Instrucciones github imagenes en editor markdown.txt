@@ -20,3 +20,7 @@ pero le añado "?raw=true" después del .png y funciona, se vé en Remarkable:
 
 
 ![w](https://github.com/wachin/wps-office-all-mui-windows-version/blob/master/imagenes/20200411-075606_nombre_sin_espacios.png?raw=true  "d")
+
+otro ejemplo:
+
+![w](https://github.com/wachin/wps-office-all-mui-win-language/blob/master/imagenes/20200411-202755 creado acceso a WPS.png?raw=true  "d")
