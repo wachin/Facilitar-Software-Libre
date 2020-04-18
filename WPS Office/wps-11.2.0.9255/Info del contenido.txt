@@ -1,0 +1,52 @@
+
+
+
+***************************************
+5.- INSTALAR COMPONENTES DE PLAYONLINUX
+***************************************
+En 
+
+"PlayOnLinux configuración/Instalar componentes"
+
+instale:
+
+msls31
+mfc42
+vbrun6
+
+
+SUPPORTED INTERFACE LANGUAGES
+
+    Chinese (CN)
+    English (GB, US)
+    French (CA, FR)
+    German (DE)
+    Indonesian (ID)
+    Polish (PL)
+    Portuguese (BR, PT)
+    Russian (RU)
+    Spanish (ES, MX)
+
+SUPPORTED SPELLCHECK LANGUAGES
+
+    Catalan (ES)
+    Croatian (HR)
+    Czech (CZ)
+    Dutch (NL)
+    English (AU, GB, US)
+    French (FR)
+    German (DE)
+    Greek (GR)
+    Italian (IT)
+    Khmer (KH)
+    Lithuanian (LT)
+    Polish (PL)
+    Portuguese (BR, PT)
+    Romanian (RO)
+    Russian (RU)
+    Slovak (SK)
+    Spanish (ES, MX)
+    Swedish (SE)
+    Turkish (TR)
+    Ukrainian (UA)
+ 

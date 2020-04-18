@@ -1,0 +1,40 @@
+
+
+Aquí están los idiomas de la interfaz gráfica de la versión 11.2.0.9255 de Windows: de_DE, en_GB, en_US, es_ES, es_MX, fr_CA, fr_FR, id_ID, pl_PL, pt_BR, pt_PT, ru_RU, ug_CN en un sólo archivo:
+
+mui.7z
+
+y los diccionarios de corrección ortográfica: de_DE, en_AU, en_CH, en_GB, en_US, es_AR, es_BO, es_CL, es_CO, es_ES, es_MX, fr_FR, id_ID, nl_NL, pl_PL, pt_BR, pt_PT, ru_RU, vi_VN más los Diccionarios de Sinónimos: de_DE, en_GB, es, fr_FR, pl_PL, ru_RU de la interfaz gráfica de la versión 11.2.0.9255 de Windows en un sólo archivo::
+
+dicts.7z
+
+para usarlos en Linux de 64 y 32 bits puesto que están mejor traducidos que las versiones de Linux
+
+Estos paquetes los conseguí instalando WPS Office 11.2.0.9255 en PlayOnLinux descargada de:
+
+https://www.wps.com/download/
+
+Las explicaciones de cómo hacer esto están en: https://github.com/wachin/wps-office-all-mui-win-language/
+
+
+**********
+ENGLISH
+**********
+
+Here are the languages from the graphical interface of Windows version 11.2.0.9255: de_DE, en_GB, en_US, es_ES, es_MX, fr_CA, fr_FR, id_ID, pl_PL, pt_BR, pt_PT, ru_RU, ug_CN in one file:
+
+mui.7z
+
+and spell checking dictionaries: de_DE, en_AU, en_CH, en_GB, en_US, es_AR, es_BO, es_CL, es_CO, es_ES, es_MX, fr_FR, id_ID, nl_NL, pl_PL, pt_BR, pt_PT, ru_RU, vi_VN and the Thesaurus Dictionaries: de_DE, en_GB, es, fr_FR, pl_PL, ru_RU of the graphical interface of Windows version 11.2.0.9255  in one file::
+
+dicts.7z
+
+to use in 64 and 32 bit Linux since they are better translated than the Linux versions
+
+I got these packages by installing WPS Office 11.2.0.9255 on PlayOnLinux downloaded from:
+
+https://www.wps.com/download/
+
+Explanations of how to do this are at: https://github.com/wachin/wps-office-all-mui-win-language/
+
+ 
