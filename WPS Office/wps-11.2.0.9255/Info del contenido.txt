@@ -50,3 +50,94 @@ SUPPORTED SPELLCHECK LANGUAGES
     Turkish (TR)
     Ukrainian (UA)
  
+
+
+
+
+
+IDIOMAS DE INTERFAZ
+
+     Chino (China)
+     Inglés (Estados Unidos)
+     Inglés (Reino Unido)
+     Francés
+     Francés (Canadá)
+     Alemán (Alemania)
+     Indonesio
+     Polaco (Polonia)
+     Portugués (Brasil)
+     Portugués (Portugal)
+     Ruso (Federación Rusa)
+     Español (México)
+     Español (España)
+
+
+DICT-EXTRAS
+IDIOMAS DE SPELLCHECK SOPORTADOS
+
+be_BY    Bielorruso (Bielorrusia)
+bg_BG    Búlgaro (Bulgaria)
+bs_BA    Bosnio (Bosnia)
+ca_ES    Catalán (España)
+cs_CZ    Checo
+da_DK    Danés (Stavekontrolden)
+el_GR    Griego (Grecia)
+
+
+
+DICT-EXTRAS
+SPELLCHECK
+
+be_BY    Belarusian (Belarus)
+bg_BG    Bulgarian (Bulgaria)
+bs_BA    Bosnian (Bosnia)
+ca_ES    Catalan (Spain)
+cs_CZ    Czech
+da_DK    Danish (Stavekontrolden)
+el_GR    Greek (Greece)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     Catalán (ES)
+     Croata (HR)
+     Checo (CZ)
+     Holandés (NL)
+     Inglés (AU, GB, EE. UU.)
+     Francés (FR)
+     Alemán (DE)
+     Griego (GR)
+     Italiano (IT)
+     Jemer (KH)
+     Lituano (LT)
+     Polaco (PL)
+     Portugués (BR, PT)
+     Rumano (RO)
+     Ruso (RU)
+     Eslovaco (SK)
+     Español (ES, MX)
+     Sueco (SE)
+     Turco (TR)
+     Ucraniano (UA)
+
+
+
+
+
+
+
+
+
+
+
