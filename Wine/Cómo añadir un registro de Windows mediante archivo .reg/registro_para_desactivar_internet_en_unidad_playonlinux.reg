@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]
+"MigrateProxy"=dword:00000001
+"ProxyEnable"=dword:00000001
+"ProxyHttp.1.1"=dword:00000000
+"ProxyOverride"="<local>"
+"ProxyServer"="http://NonExistantProxyAddress:80"
+"User Agent"="Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1"
