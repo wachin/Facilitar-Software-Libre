@@ -1,7 +1,7 @@
 
 
 
-
+Instalar Inkscape 1.0 desde código fuente
 
 sudo apt-get install build-essential intltool libfreetype6-dev liblcms2-dev \
 libgc-dev libglibmm-2.4-dev libgsl0-dev libxml2-dev libxslt1-dev libcairo2-dev \
@@ -20,99 +20,6 @@ cmake ..
 make
 sudo make install
 exit
-
-
-cd ..
-git clone https://github.com/giuliomoro/checkinstall
-cd checkinstall
-sudo make install
-exit
-
-
-
-cd /home/wachin/Instaladores-Linux/Inkscape/source/inkscape-1.0/inkscape-1.0_2020-05-01_4035a4fb49/build/src/
-sudo checkinstall
-
-The package documentation directory ./doc-pak does not exist. 
-Should I create a default set of package docs?  [y]: ^C
-
-y
-
-Por favor escoge el método de empaquetado que quieres usar.
-¿Slackware [S], RPM [R] o Debian [D]? 
-
-D
-
-Por favor escribe una descripción para el paquete.
-Termina tu descripcion con una linea vacia o con EOF.
->> Design Graphic Software
-
-ENTER
-ENTER
-
-Introduce un número para cambiar algún dato u oprime ENTER para continuar:
-
-Installing with make install...
-
-====================== Resultados de la instalación  =====================
-[  2%] Built target nrtype_LIB
-[  3%] Built target util_LIB
-[  7%] Built target 2geom_LIB
-[  9%] Built target uemf_LIB
-[ 12%] Built target croco_LIB
-[ 12%] Built target depixelize_LIB
-[ 14%] Built target avoid_LIB
-[ 15%] Built target cola_LIB
-
-
-[100%] Built target inkview
-[100%] Linking CXX executable ../bin/inkscape
-[100%] Built target inkscape
-Install the project...
--- Install configuration: "Release"
--- Installing: /usr/local/bin/inkscape
--- Set runtime path of "/usr/local/bin/inkscape" to "$ORIGIN/../lib/inkscape"
--- Installing: /usr/local/bin/inkview
--- Set runtime path of "/usr/local/bin/inkview" to "$ORIGIN/../lib/inkscape"
--- Installing: /usr/local/lib/inkscape/libinkscape_base.so
--- Set runtime path of "/usr/local/lib/inkscape/libinkscape_base.so" to "$ORIGIN/../lib/inkscape"
-
-========================== Instalación exitosa ===========================
-Some of the files created by the installation are inside the home directory: /home
-
-You probably don't want them to be included in the package.
-¿Quieres que los liste para tí? [n]: 
-
-
-n
-
-
-¿Debo excluirlos del paquete (Decir que sí es una buena idea) [n]: 
-
-n
-
-
-
-**********************************************************************
-
- Done. The new package has been saved to
-
- /home/wachin/Instaladores-Linux/Inkscape/source/inkscape-1.0/inkscape-1.0_2020-05-01_4035a4fb49/build/src/inkscape_20200505-1_i386.deb
- You can install it in your system anytime using: 
-
-      dpkg -i inkscape_20200505-1_i386.deb
-
-**********************************************************************
-
-wachin@antix19:~/Instaladores-Linux/Inkscape/source/inkscape-1.0/inkscape-1.0_2020-05-01_4035a4fb49/build/src
-
-
-
-
-
-
-
-
 
 
 
