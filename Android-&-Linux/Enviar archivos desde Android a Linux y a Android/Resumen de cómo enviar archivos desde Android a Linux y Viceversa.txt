@@ -62,5 +62,10 @@ Copiando un archivo desde el ordenador(Linux) a Android
 
 adb push /home/wachin/Picture/20200514-225902.png /storage/emulated/0/Download
 
+Ejemplo 3:
+En el siguiente caso la ruta del archivo en Linux la he copiado con el administrador de archivos Caja y le he puesto parentesis para que coja los espacios vacíos:
+
+adb push "/home/wachin/Android/LineageOS 15.1 for the Samsung Galaxy J5 (SM-J500H)/lineage-15.1-j87-20181009-NIGHTLY-j53gxx.zip" /storage/emulated/0/
+
 
 
