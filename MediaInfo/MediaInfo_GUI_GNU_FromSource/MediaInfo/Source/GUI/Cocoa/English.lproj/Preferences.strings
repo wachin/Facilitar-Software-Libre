@@ -1,0 +1,18 @@
+
+/* Class = "NSWindow"; title = "Preferences"; ObjectID = "1"; */
+"1.title" = "Preferences";
+
+/* Class = "NSToolbarItem"; label = "General"; ObjectID = "12"; */
+"12.label" = "General";
+
+/* Class = "NSToolbarItem"; paletteLabel = "General"; ObjectID = "12"; */
+"12.paletteLabel" = "General";
+
+/* Class = "NSTextFieldCell"; title = "Language:"; ObjectID = "25"; */
+"25.title" = "Language:";
+
+/* Class = "NSMenuItem"; title = "Default"; ObjectID = "48"; */
+"48.title" = "Default";
+
+/* Class = "NSTextFieldCell"; title = "Changes take effect after application restart"; ObjectID = "54"; */
+"54.title" = "Changes take effect after application restart";
