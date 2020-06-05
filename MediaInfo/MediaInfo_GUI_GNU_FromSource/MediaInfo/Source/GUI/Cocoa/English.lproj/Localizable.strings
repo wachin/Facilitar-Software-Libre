@@ -1,9 +1,0 @@
-/* Error text while open */
-"Can not open file(s)" = "Can not open file(s)";
-
-/* Error text while export */
-"Can not save file" = "Can not save file";
-
-/* Error header */
-"Error" = "Error";
-
