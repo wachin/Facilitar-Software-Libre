@@ -1,0 +1,53 @@
+
+CONFIGURACIÓN DE WINE
+Poner en la terminal:
+
+winecfg 
+
+
+PANEL DE CONTROL
+
+wine control 
+
+este abre el panel de control de Wine
+
+
+DESINSTALADOR
+Abrir el desinstalador de aplicaciones
+
+wine uninstaller
+
+
+ADMINISTRADOR DE ARCHIVOS DE WINE
+poner en la terminal:
+
+winefile
+
+
+BLOQUE DE NOTAS DE WINE
+
+wine notepad
+
+
+CMD DE WINE
+
+wine console
+
+
+CÓMO ABRIR EL REGISTRO 
+Desde la terminal poner
+
+regedit
+
+
+WINETRICKS
+Pero es necesario instalarlo primero
+
+winetricks
+
+
+
+
+
+Wine User's Guide - WineHQ Wiki
+https://wiki.winehq.org/Wine_User%27s_Guide

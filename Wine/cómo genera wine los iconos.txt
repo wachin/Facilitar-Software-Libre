@@ -1,0 +1,14 @@
+ 
+
+ /home/wachin/.config/menus/applications-merged/
+
+    rm -f ~/.local/share/mime/packages/x-wine*
+    rm -f ~/.local/share/applications/wine-extension*
+    rm -f ~/.local/share/icons/hicolor/*/*/application-x-wine-extension*
+    rm -f ~/.local/share/mime/application/x-wine-extension* 
+
+
+ 
+ 
+ mime type - How to prevent Wine from adding file associations? - Ask Ubuntu
+https://askubuntu.com/a/400430/145772
