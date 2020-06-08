@@ -3,9 +3,9 @@ https://facilitarelsoftwarelibre.blogspot.com/2019/10/como-instalar-alarm-clock-
 
 
 alarm-clock-applet · Alarmas · Reloj · Temporizador
-En Debian 10 Buster no está disponible el paquete "alarm-clock-applet", pero se puede instalar y funciona muy bien el paquete de Ubuntu que está hasta Disco, así que descarguemosle desde allí:
+En Debian 10 Buster no está disponible el paquete "alarm-clock-applet", pero se puede instalar y funciona muy bien el paquete de Ubuntu que está hasta Bionic, así que descarguemosle desde allí:
 
-https://packages.ubuntu.com/disco/alarm-clock-applet
+https://packages.ubuntu.com/alarm-clock-applet
 
 
 
