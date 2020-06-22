@@ -1,0 +1,16 @@
+
+
+
+VSDC Video Editor 6.4.1 instalar en Linux con PlayOnLinux (Wine 3.5)
+
+VSDC Video Editor
+
+
+Requisitos:
+PlayOnLinux, allí instalar en una unidad virtual Wine 3.5
+
+y en los complementos:
+
+msls31
+msxml6
+msxml3
