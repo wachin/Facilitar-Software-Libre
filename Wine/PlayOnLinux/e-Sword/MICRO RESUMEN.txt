@@ -1,0 +1,12 @@
+
+
+Instalar e-Sword 12.1.0 en Linux (Ubuntu, Linux Mint, OpenSUSE, Fedora, KDE Neon, Kubuntu, Debian, Deepin, etc) con PlayOnLinux (wine 3.0.1) ~ Proyecto Facilitar el Software Libre en el Ecuador
+https://facilitarelsoftwarelibre.blogspot.com/2019/12/instalar-e-sword-en-linux-con-playonlinux.html
+
+- Wine 3.0.1 en adelante hasta antes de 4 y usar el tipo de unidad de 32 así sea que tenga un S.O. de 64 bits.
+- En la versión de Windows a imitar ponga "Windows 10"
+- Instalar los siguientes componentes:
+mfc42
+msls31
+msxml6
+- Poner a riched20 y oleaut32 como "librería nativa y luego interna" 
