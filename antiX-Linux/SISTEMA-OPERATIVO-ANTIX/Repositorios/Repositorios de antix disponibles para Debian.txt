@@ -1,0 +1,5 @@
+
+sudo gedit /etc/apt/souces.list.d
+
+
+deb http://repo.antixlinux.com/buster buster main nosystemd
