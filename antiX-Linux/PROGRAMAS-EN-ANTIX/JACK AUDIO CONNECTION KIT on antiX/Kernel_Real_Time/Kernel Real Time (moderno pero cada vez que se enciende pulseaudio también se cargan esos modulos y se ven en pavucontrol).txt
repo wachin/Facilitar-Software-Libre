@@ -1,14 +1,14 @@
 
+Instalar el Kernel Realtime
 
-Este kernel viene instalado por defecto en antiX 9
-
-linux-image-4.9.193-antix.1-486-smp 
-linux-headers-4.9.193-antix.1-486-smp
-
-
-yo voy a instalar el Kernel Real Time
+Para 32 bits:
 
 sudo apt-get install dkms linux-image-rt-686-pae linux-headers-rt-686-pae
+
+
+Para 64 bits:
+
+sudo apt-get install dkms linux-image-rt-amd64 linux-headers-rt-amd64
 
 
 CONSULTA:
@@ -113,12 +113,11 @@ Abrir la configuración de QjackCtl en:
 
 Setup
 
-allí en "Frecuencia de muestreo" por defecto esá en 48000, yo a usaré en 44100 para usar menos procesamiento
+allí en "Frecuencia de muestreo" por defecto está en 48000, yo a usaré en 44100 para usar menos procesamiento
 
 pero en "Cuadros / Periodo" le pongo 128 porque quiero usar JACK como un estereo mixer para escuchar lo que yo mismo estoy hablando (o cantando) mientras se reproduce.
 
 y en la pestaña "Otras" marcar la casilla: "Enable JACK D-Bus interface" lo cual es para que JACK envie sonido a las aplicaciones de Pulseaudio, lo cual se puede ver en pavucontrol.
-
 
 Ahora, poner en la terminal:
 

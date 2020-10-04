@@ -1,14 +1,15 @@
 
 
-Este kernel viene instalado por defecto en antiX 9
+Instalar el Kernel Realtime
 
-linux-image-4.9.193-antix.1-486-smp 
-linux-headers-4.9.193-antix.1-486-smp
-
-
-yo voy a instalar el Kernel Real Time
+Para 32 bits:
 
 sudo apt-get install dkms linux-image-rt-686-pae linux-headers-rt-686-pae
+
+
+Para 64 bits:
+
+sudo apt-get install dkms linux-image-rt-amd64 linux-headers-rt-amd64
 
 
 CONSULTA:
@@ -25,8 +26,15 @@ Si tenéis un ordenador de 32 bits y tenéis mas de 3GB de RAM si no tenéis ins
 INSTALAR PULSEAUDIO-MODULE-JACK
 *******************************
 
-sudo apt-get install ardour grub-customizer pulseaudio-module-jack qjackctl a2jmidid jackeq qsynth patchage calf-plugins amb-plugins tap-plugins dssi-host-jack pavucontrol
+sudo apt-get install ardour grub-customizer pulseaudio-module-jack qjackctl a2jmidid jackeq patchage calf-plugins amb-plugins tap-plugins dssi-host-jack dssi-utils pavucontrol
 
+
+Opcional para Soundfont
+
+sudo apt install qsynth fluid-soundfont-gm
+
+
+Espere y aparecerá una ventana donde debe aceptar la nueva configuración de audio
 
 Ahora bien, si por un caso se confundió y aplastó ENTER en "No" pues vuelva a intentarlo, para eso porga en la terminal este comando:
 
@@ -84,7 +92,6 @@ poner en orden primero al nuevo Kernel de Tiempo Real
 
 
 
-
 PARA LANZAR QJACKCTL Y PULSEAUDIO:
 
 Poner en la terminal:
@@ -95,15 +102,19 @@ Abrir la configuración de QjackCtl en:
 
 Setup
 
-allí en "Frecuencia de muestreo" por defecto esá en 48000, yo a usaré en 44100 para usar menos procesamiento
+allí en "Frecuencia de muestreo" por defecto está en 48000, yo a usaré en 44100 para usar menos procesamiento
 
 pero en "Cuadros / Periodo" le pongo 128 porque quiero usar JACK como un estereo mixer para escuchar lo que yo mismo estoy hablando (o cantando) mientras se reproduce.
+
+Opcional (Verificar este paso):
+
+y en la pestaña "Otras" marcar la casilla: "Enable JACK D-Bus interface" lo cual es para que JACK envie sonido a las aplicaciones de Pulseaudio, lo cual se puede ver en pavucontrol.
 
 Ahora, poner en la terminal:
 
 pulseaudio --start
 
-ejecutarlo y después poner:
+ejecutarlo y después poner (para que se carguen los módulos de pulseaudio) en la terminal:
 
 pactl load-module module-jack-sink channels=2; pactl load-module module-jack-source; pacmd set-default-sink jack_out
 
