@@ -49,11 +49,7 @@ xutils lintian pbuilder
 
 Step 3. Obtain & prepare source code
 
-Descargar el código fuente. Desempaquete y cambie el nombre del directorio a uno como este:
-
-"nombre-versión"
-
-Ejemplo:
+Descargar el código fuente. Desempaquete y cambie el nombre del directorio a : "nombre-versión" Ejemplo:
 
 inkscape-101
 
@@ -123,6 +119,8 @@ In the same "debian" folder, you will also find a "copyright" file which you nee
 "changelog" file
 
 Make sure that email used in this file is correct (it must be same as used for gpg-key generation)
+
+
 Step 5. Build a package
 
 Ok. It's time to build our package. Let's do it:
