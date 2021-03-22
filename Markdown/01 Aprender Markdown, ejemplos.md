@@ -1,10 +1,14 @@
 
 
+**Cajas de código**
+que no importa lo que vaya dentro no afectará el formato:
+
 ```bat
 cd \
 copy a b
 ping 192.168.0.1
 ```
+
 
 
 ```dos
@@ -15,10 +19,18 @@ ping 192.168.0.1
 
 
 
+**Bloque de citas:**
+
 > Blockquote.
 hola cómo están
 
 >> Second paragraph in the blockquote, nested.
+
+
+
+**Encabezado 2**
+
+Equivalente a Header 2, o H2
 
 > ## This is an h2 in a blockquote
 
