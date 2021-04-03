@@ -1,0 +1,88 @@
+
+Instalar OpenToonz 1.4 desde código fuente
+
+
+Sistema Operativo: 
+MX Linux 19.3 de 32 bits
+
+
+Instalar las dependencias:
+
+sudo apt-get install build-essential git cmake pkg-config libboost-all-dev qt5-default qtbase5-dev libqt5svg5-dev qtscript5-dev qttools5-dev qttools5-dev-tools libqt5opengl5-dev qtmultimedia5-dev libsuperlu-dev liblz4-dev libusb-1.0-0-dev liblzo2-dev libpng-dev libjpeg-dev libglew-dev freeglut3-dev libfreetype6-dev libjson-c-dev qtwayland5 libmypaint-dev libgsl23 libopenblas-dev
+
+
+INSTRUCCIONES DE INSTALACIÓN
+Le recomiendo que cree una carpeta que usted sepa que es para tener instalados allí programas desde código fuente, la puede crear manualmente, ejemplo que tenga el siguiente nombre:
+
+github
+
+usted puede poner otro nombre
+
+
+DESCARGAR 
+Necesitamos exactamente la versión 1.4.0, diríjase a la siguiente dirección:
+
+https://github.com/opentoonz/opentoonz/releases/tag/v1.4.0
+
+allí al final donde dice:
+
+Assets
+
+descargue el archivo que se llama:
+
+Source code (tar.gz)
+
+después de que lo haya descargado descomprímalo con clic derecho y Extraer aquí
+
+
+CONSTRUYENDO LIFF-4.0.3
+
+Luego entre allí en esa carpeta y allí dentro abra una terminal en esa ruta y ponga una por una las siguientes cuatro lineas ejecutandolas:
+
+
+cd opentoonz/thirdparty/tiff-4.0.3
+./configure --with-pic --disable-jbig
+make -j$(nproc)
+cd ../../
+
+
+COMPILANDO OPENTOONZ
+
+Allí mismo ponga en la terminal una por una las siguientes 5 líneas:
+
+cd toonz
+mkdir build
+cd build
+cmake ../sources
+make -j$(nproc)
+
+Nota: Esto puede demorar media hora.
+
+
+LANZANDO LA APLICACIÓN SIN INSTALAR (OPCIONAL)
+Ponga allí, una por una las siguientes dos líneas:
+
+LD_LIBRARY_PATH=./lib/opentoonz:$LD_LIBRARY_PATH
+./bin/OpenToonz
+
+y se abrirá OpenToonz.
+
+
+INSTALANDO OPENTOONZ
+Ponga allí mismo lo siguiente:
+
+sudo make install
+
+Ahora si quedará instalado OpenToonz
+
+Nota: Por defecto quedará instalado en el sistema en: /opt/opentoonz
+
+
+
+
+
+
+
+
+
+
