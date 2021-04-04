@@ -16,7 +16,7 @@ Le recomiendo que cree una carpeta que usted sepa que es para tener instalados a
 
 github
 
-usted puede poner otro nombre
+usted puede poner otro nombre, además puede crear una subcarpeta si de pronto va a compilar alguna de las otras versiones.
 
 
 DESCARGAR 
@@ -35,12 +35,45 @@ Source code (tar.gz)
 después de que lo haya descargado descomprímalo con clic derecho y Extraer aquí
 
 
+COPIANDO LA CARPETA 'stuff'
+Entre en esa carpeta: 
+
+opentoonz-1.4.0
+
+estándo allí en ese directorio /opentoonz-1.4.0 allí dentro abra una terminal y ponga una por una las siguientes dos líneas ejecutandolas:
+
+mkdir -p $HOME/.config/OpenToonz
+cp -r stuff $HOME/.config/OpenToonz/
+
+
+Eso es para copiar los archivos de configuración que están en al carpeta "stuff" a la carpeta oculta que hemos creado: .config/OpenToonz que es el lugar donde están las configuraciones. Es necesario hacer eso para el programa para esta versión.
+
+
+CREANDO SystemVar.ini
+Lo siguiente es para corregir una parte del código, ponga en la terminal de una sola vez las siguientes 13 líneas y ejecútela:
+
+cat << EOF > $HOME/.config/OpenToonz/SystemVar.ini
+[General]
+OPENTOONZROOT="$HOME/.config/OpenToonz/stuff"
+OpenToonzPROFILES="$HOME/.config/OpenToonz/stuff/profiles"
+TOONZCACHEROOT="$HOME/.config/OpenToonz/stuff/cache"
+TOONZCONFIG="$HOME/.config/OpenToonz/stuff/config"
+TOONZFXPRESETS="$HOME/.config/OpenToonz/stuff/projects/fxs"
+TOONZLIBRARY="$HOME/.config/OpenToonz/stuff/projects/library"
+TOONZPROFILES="$HOME/.config/OpenToonz/stuff/profiles"
+TOONZPROJECTS="$HOME/.config/OpenToonz/stuff/projects"
+TOONZROOT="$HOME/.config/OpenToonz/stuff"
+TOONZSTUDIOPALETTE="$HOME/.config/OpenToonz/stuff/studiopalette"
+EOF
+
+
+
+
 CONSTRUYENDO LIFF-4.0.3
+Allí mismo en esa ruta /opentoonz-1.4.0 ponga una por una las siguientes cuatro lineas ejecutandolas:
 
-Luego entre allí en esa carpeta y allí dentro abra una terminal en esa ruta y ponga una por una las siguientes cuatro lineas ejecutandolas:
 
-
-cd opentoonz/thirdparty/tiff-4.0.3
+cd thirdparty/tiff-4.0.3
 ./configure --with-pic --disable-jbig
 make -j$(nproc)
 cd ../../
@@ -48,7 +81,7 @@ cd ../../
 
 COMPILANDO OPENTOONZ
 
-Allí mismo ponga en la terminal una por una las siguientes 5 líneas:
+Allí mismo en esa ruta /opentoonz-1.4.0 ponga en la terminal una por una las siguientes 5 líneas ejecutandolas:
 
 cd toonz
 mkdir build
@@ -60,10 +93,9 @@ Nota: Esto puede demorar media hora.
 
 
 LANZANDO LA APLICACIÓN SIN INSTALAR (OPCIONAL)
-Ponga allí, una por una las siguientes dos líneas:
+Ponga allí la siguienteslínea:
 
-LD_LIBRARY_PATH=./lib/opentoonz:$LD_LIBRARY_PATH
-./bin/OpenToonz
+LD_LIBRARY_PATH=./lib/opentoonz:$LD_LIBRARY_PATH && ./bin/OpenToonz
 
 y se abrirá OpenToonz.
 
@@ -77,6 +109,38 @@ Ahora si quedará instalado OpenToonz
 
 Nota: Por defecto quedará instalado en el sistema en: /opt/opentoonz
 
+
+LANZANDO OPENTOONZ
+Ponga en la terminal la siguiente línea:
+
+LD_LIBRARY_PATH=/opt/opentoonz/lib/opentoonz:$LD_LIBRARY_PATH && /opt/opentoonz/bin/OpenToonz
+
+
+ACTIVANDO EL ICONO DEL PROGRAMA
+Ponga en la terminal lo siguiente:
+
+touch $HOME/.local/share/applications/OpenToonz.desktop
+
+y luego poner de una sola vez las siguientes 9 líneas:
+
+cat << EOF > $HOME/.config/OpenToonz/SystemVar.ini
+[Desktop Entry]
+Name=OpenToonz
+Exec=/opt/opentoonz/bin/OpenToonz
+Type=Application
+StartupNotify=true
+Path=/opt/opentoonz/lib/opentoonz:$LD_LIBRARY_PATH
+Icon=/opt/opentoonz/share/icons/hicolor/256x256/apps/io.github.OpenToonz.png
+EOF
+
+
+
+
+PARA DESINSTALAR:
+Ponga en la terminal lo siguente:
+
+rm -fr $HOME/.config/OpenToonz/
+sudo rm -fr /opt/opentoonz/
 
 
 
