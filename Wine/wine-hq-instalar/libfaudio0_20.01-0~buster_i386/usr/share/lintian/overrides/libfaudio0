@@ -1,2 +1,0 @@
-# libstb calls exit, this would need to be fixed there
-shlib-calls-exit

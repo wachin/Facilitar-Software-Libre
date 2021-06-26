@@ -1,0 +1,29 @@
+
+
+
+
+Cómo instalar Reaper en MX Linux 
+
+
+
+Registering WineASIO libraries
+
+If you have run KXStudio Welcome Setup previously then you should already have the wineasio.dll library registered. Otherwise, for example if you have messed up or deleted your Wine configuration, you should run:
+
+regsvr32 wineasio.dll
+
+If you're running a 64-bit OS and you want to run 64-bit Windows software under wine, run the following too:
+
+wine64 regsvr32 wineasio.dll
+
+You should only need to issue these commands once, if at all, but there is no harm in re-running them.
+
+
+
+CONSULTAS
+
+KXStudio
+https://kx.studio/Documentation:Manual:wineasio_and_reaper
+
+(6) How to install and register wineasio [english cc available] - YouTube
+https://www.youtube.com/watch?v=i7qHVSMK8FE 
