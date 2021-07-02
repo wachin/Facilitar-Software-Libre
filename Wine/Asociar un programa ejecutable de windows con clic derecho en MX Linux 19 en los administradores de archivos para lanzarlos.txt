@@ -1,14 +1,17 @@
 
 
+Asociar un programa ejecutable de windows con clic derecho en MX Linux 19 en los administradores de archivos para lanzarlos / abrirlos / ejecutarlos
 
-Estoy en antiX 19, y abro synaptic
 
-allí busco el paquete:
+En MX Linux y antiX 19 no aparece abrir con Wine al dar clic derecho en algún ejecutable de windows. La solución es colocar el archivo de ejemplo que viene en el paquete wine dentro de:
+
+/usr/share/applications/
+
+Este archivo usted lo puede ver al abrir synaptic, allí buscar el paquete:
 
 wine
 
-lo encuentro con el nombre "wine", le doy clic y reviso los archivos instalados y hay uno que se llama:
-
+dar clic y reviso los archivos instalados y hay uno que se llama:
 
 /usr/share/doc/wine/examples/wine.desktop
 
@@ -52,19 +55,15 @@ ahora abro thunar como root
 
 sudo thunar
 
-y busco ese archivo:
+y busco ese archivo: wine.desktop en:
 
-wine.desktop
+/usr/share/doc/wine/examples/
 
-y lo copio y lo pego en:
+lo copio y lo pego en:
 
 /usr/share/applications/
 
-y queda así:
+y queda así y cierro.
 
-/usr/share/applications/wine.desktop
-
-y cierro.
-
-Ahora abro otro administrador de archivos y busco cualquier ejecutable y doy clic derecho y ahora ya aparece la opción para ejecutar con wine
+Ahora abro algún administrador de archivos y busco cualquier ejecutable y doy clic derecho y ahora ya aparece la opción para ejecutar con wine
 

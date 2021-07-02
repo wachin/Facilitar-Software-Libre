@@ -1,0 +1,89 @@
+
+
+
+
+Cómo instalar FL Studio 9 en MX Linux 19
+
+REQUISITOS:
+
+- Se requiere de un ordenador algo potente para que no se quede atascado Fl Studio
+
+- Esta instalación la he hecho en MX Linux 19 de 32 bits pero se puede también para 64 bits, y debería de poderse en otro Linux que use la administración de paquetes deb o otro tipo como rpm
+
+- En esta instalación la he hecho con FL Studio 9 pero se podría hacer con las versiones más actuales.
+
+- En esta instalación necesitamos usar la versión de Wine que viene en el Sistema Operativo 
+
+
+INSTALACIÓN DE WINE
+Instale la versión de Wine en su sistema operativo, en MX Linux es así:
+
+sudo apt install wine 
+
+Consulte en otros sistemas operativos cómo se instala.
+
+
+INSTALE FL STUDIO EN WINE
+
+Antes de continuar, en MX Linux y antiX 19 no aparece abrir con Wine al dar clic derecho en algún ejecutable de windows, se puede solucionar eso con el siguiente tutorial:
+
+Asociar un programa ejecutable de windows con clic derecho en MX Linux o antiX 19 en los administradores de archivos para lanzarlos / abrirlos / ejecutarlos
+https://facilitarelsoftwarelibre.blogspot.com/2021/06/asociar-ejecutable-exe-de-windows-con-clic-derecho-de-administradores-de-archivos.html
+
+pero sino se pueden instalar los programas de Wine, se puede desde la terminal escribiendo wine luego dejando un espacio y arrastrando el ejecutable a la terminal en lo cual se creará una ruta (dependiendo de la terminal usada) y se podrá ejecutar en este caso para instalar el programa.
+
+
+Una vez instalado FL Studio (exepto que use AVLinux donde ya viene) debe instalar WineASIO
+
+
+INSTALAR WineASIO
+Descargue los repositorios de KXStudio, vealo en:
+
+https://kx.studio/Repositories
+
+para MX Linux lo más factible es instalar el .deb de los repositorios:
+
+https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos_10.0.3_all.deb
+
+e instalarlo
+
+luego actualice los repositorios e instale ese deb
+
+Ahora en Synaptic busque el paquete wineasio y dependiendo de su arquitecture instale para 32 o 64 bits
+
+
+REGISTRANDO LIBRERÍAS WineASIO
+Si su sistema es de 32 bits poner en la terminal:
+
+regsvr32 wineasio.dll
+
+
+Si usted está usando un Sistema Operativo de 64-bit y la versión de FL Studio es de 64 bits ponga:
+
+wine64 regsvr32 wineasio.dll
+
+Nota: Solo debería necesitar poner el comando una vez, pero no hay nada de malo en volver a ejecutarlos.
+
+
+CONFIGURANDO FL STUDIO
+Abra Fl Studio y de clic en la configuración y en audio seleccione 
+
+wine ASIO
+
+y listo, pruebe cómo es el sonido 
+
+
+FL Studio 9
+Si alguien desea descargar el viejo FL Studio 9 aquí está la descarga. Enlace magnético de FL Studio 9, copiar y pegarlo en Firefox (es necesario tener instalado algún gestor de descargas de Torrent en Linux):
+
+magnet:?xt=urn:btih:4c91a39cfc736eed402e57b629e1af78ebdaa270&dn=FL%20Studio%209&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&tr=http%3a%2f%2ftracker.openbittorrent.com%2fannounce&tr=http%3a%2f%2fgenesis.1337x.org%3a1337%2fannounce&tr=udp%3a%2f%2ftracker.1337x.org%3a80%2fannounce&tr=udp%3a%2f%2ftracker.zer0day.to%3a1337%2fannounce&tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce&tr=udp%3a%2f%2fcoppersurfer.tk%3a6969%2fannounce
+
+
+
+CONSULTAS
+
+KXStudio
+https://kx.studio/Documentation:Manual:wineasio_and_reaper
+
+(6) How to install and register wineasio [english cc available] - YouTube
+https://www.youtube.com/watch?v=i7qHVSMK8FE 
